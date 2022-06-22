@@ -1,6 +1,7 @@
 //required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generate = require('./generateReadme');
 
 //array of questions to ask
 const questions = [
