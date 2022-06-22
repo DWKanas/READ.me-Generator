@@ -16,6 +16,13 @@ function generateReadme(data) {
         To install: 
         \`${data.install}\`
         ### Usage 
+        ${data.repo}
+        ### License
+        ${renderLicenseSection(data.license)}
+        ### Contributing
+        ${data.contribute}
+        ### Questions
+        For any other concerns, visit (https://github.com/${data.username}, or email ${data.email} 
         `
     )
 }
