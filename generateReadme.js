@@ -1,10 +1,10 @@
-function generateReadme(data) {
+export default function generateReadme(data) {
     return (
         `## ${data.project}
         ${renderLicenseLink(data.license)}
-        ### Description
+### Description
         ${data.description}
-        ### Table of Contents
+### Table of Contents
         - [Installation](https://github.com/DWKanas/READ.me-Generator#installation)
         - [Usage](https://github.com/DWKanas/READ.me-Generator#usage)
         - [License](https://github.com/DWKanas/READ.me-Generator#license)
@@ -12,16 +12,16 @@ function generateReadme(data) {
         - [Tests](https://github.com/DWKanas/READ.me-Generator#tests)
         - [Questions](https://github.com/DWKanas/READ.me-Generator#questions)
 
-        ### Installation
+### Installation
         To install: 
         \`${data.install}\`
-        ### Usage 
+### Usage 
         ${data.repo}
-        ### License
+### License
         ${renderLicenseSection(data.license)}
-        ### Contributing
+### Contributing
         ${data.contribute}
-        ### Questions
+### Questions
         For any other concerns, visit (https://github.com/${data.username}, or email ${data.email} 
         `
     )
@@ -111,3 +111,4 @@ function renderLicenseLink(license) {
       return `N/A`
     } 
   }
+

@@ -1,8 +1,8 @@
 //required packages
-// import inquirer from 'inquirer';
-const inquirer = require('inquirer');
-const fs = require('fs');
-const generate = require('./generateReadme');
+import inquirer from 'inquirer';
+// const inquirer = require('inquirer');
+import fs from 'fs';
+import generate from './generateReadme.js'
 
 //array of questions to ask
 const questions = [
