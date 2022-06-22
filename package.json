@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DWKanas/READ.me-Generator/issues"
   },
-  "homepage": "https://github.com/DWKanas/READ.me-Generator#readme"
+  "homepage": "https://github.com/DWKanas/READ.me-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
 }
