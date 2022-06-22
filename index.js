@@ -15,3 +15,9 @@ const questions = [
     'What does the user need to know about contributing to the repo?'
 ];
 
+function writemdFile(data) {
+    fs.writeFile('README.md', generate(data), (err) =>
+        err ? console.error(err) : console.log('README Generated!')
+    
+    )
+}
